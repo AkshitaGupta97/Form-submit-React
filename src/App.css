@@ -13,7 +13,7 @@ input {
 .error-input {
   border: 2px solid red;
 }
-button {
+#form-button {
   padding: 10px 15px;
   background-color: crimson;
   color: white;
@@ -21,14 +21,19 @@ button {
   border-radius: 4px;
   font-weight: bold;
   cursor: pointer;
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
 }
-button:hover {
+#form-button:hover {
   background-color: darkred;
 }
 form {  
   display: flex;
   flex-direction: column;
-  max-width: 300px;
+  max-width: 600px;
   margin: auto;
   padding: 20px;
   border: 1px solid #ccc;
@@ -39,6 +44,14 @@ label {
   margin-bottom: 5px;
   font-weight: bold;
   color: black;
+}
+.error-text {
+  color: red;
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: -5px;
+  margin-bottom: 10px;
+  text-align: left;
 }
 .shake {
   animation: shake 0.3s linear 0s 3;  /* 3 represent iteration count*/
@@ -78,7 +91,7 @@ label {
   border-radius: 4px;
   letter-spacing: 2px;
 }
-.countdown-date button {
+.countdown button {
   padding: 2px 40px;
   font-weight: 600;
 }
